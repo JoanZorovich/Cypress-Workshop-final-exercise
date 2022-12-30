@@ -19,9 +19,6 @@ class HomePage {
         return this.carouselPreviousButton().click();
       }
     
-    prueba(){
-      console.log("aquiiiiiiii" + this.carouselItemsLength);
-    }
 
    } 
 export default HomePage;
