@@ -10,7 +10,7 @@ Given('User is on the homepage', () => {
 });
 
 When('User clicks on the next button', () => {
-    home.clickCarouselNextButton().click();
+    home.clickCarouselNextButton();
 });
 
 Then('User should be able to see the following image', () => {
@@ -18,7 +18,7 @@ Then('User should be able to see the following image', () => {
 });
 
 When('User clicks on the previous button', () => {
-    home.clickCarouselPrevButton().click();
+    home.clickCarouselPrevButton();
 });
 
 Then('User should be able to see the previous image', () => {
@@ -27,7 +27,7 @@ Then('User should be able to see the previous image', () => {
 
 When('User sees the different carousel items', () => {
     //cambiar click por otra accion
-    home.clickCarouselPrevButton().click();
+    home.clickCarouselPrevButton();
 });
 
 Then('User should be able to see {int} items', (items) => {
