@@ -14,10 +14,14 @@ Feature: Homepage carousel behavior
         When User clicks on the previous button
         Then User should be able to see the previous image
 
-    Scenario: stop the carousel by hovering the mouse over an image
-        When User hovers the mouse over  a carousel image
-        Then User should be able to see one image in carousel
+    Scenario: number of items in the carousel
+        When User sees the different carousel items
+        Then User should be able to see 3 items
 
-    Scenario: carousel images change automatically
-        When User sees the carousel displayed
-        Then User should be able to see different images moving automatically
+    # Scenario: stop the carousel by hovering the mouse over an image
+    #     When User hovers the mouse over  a carousel image
+    #     Then User should be able to see one image in carousel
+
+    # Scenario: carousel images change automatically
+    #     When User sees the carousel displayed
+    #     Then User should be able to see different images moving automatically
