@@ -14,5 +14,15 @@ the following functionalities:
 2. Test Navigation to all header links. It should be in a feature including at least 3 scenarios.
 3. Test the categories Selection, product Selection, Adding product to cart, Buying cart, Removing element from cart. All of the defined scenarios for these functionalities should be on a feature.
 
+## considerations
+
+- Cypress version 9.7.0
+- Node version 16.13.0
+
+## Tools
+
+- [ ] Cypress
+- [ ] Cucumber
+- [ ] Allure
 ---
 ⌨️ con ❤️ por [Joan Zorovich](https://github.com/JoanZorovich) 😊
