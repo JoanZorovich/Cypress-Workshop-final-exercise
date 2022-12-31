@@ -13,9 +13,12 @@ When('User clicks {string} link on the navbar', (linkName) => {
     navbar.clickOnNavbarLink(linkName);
 });
 
-// Then('User should be able to see the Categories section', () => {
-//     navbar.emailInput().should('be.visible');
-// });
+/////////////refactorizar
+Then('User should be able to see different products to select', () => {
+    cy.request('https://api.demoblaze.com/entries').then((response)=>{
+        cy.wrap(response.body.Items).as('responseBody').should('have.length', 9)
+       })
+});
 
 Then('User should be able to see a Contact Email input', () => {
     navbar.emailInput().should('be.visible');

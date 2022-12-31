@@ -5,12 +5,12 @@ Feature: Navbar behavior
 
     Background:
         Given User is on the homepage
+    
+     ##### ojooooooooooooo  colocar tagsssss - tag de id suites etc
 
-    # Scenario: clicking on Home a page is correctly displayed
-    #     When User clicks "Home" link on the navbar
-    #     Then User should be able to see the Categories section
-
-    ##### ojooooooooooooo  colocar tagsssss - tag de id suites etc
+    Scenario: clicking on Home a page is correctly displayed
+        When User clicks "Home" link on the navbar
+        Then User should be able to see different products to select
 
     Scenario: clicking on Contact a modal is displayed
         When User clicks "Contact" link on the navbar
