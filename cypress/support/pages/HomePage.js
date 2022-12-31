@@ -26,7 +26,6 @@ class HomePage {
         return this.categoryLinks(text).click();
     }
     
-    //////////Modificar esto
     getRandomProductLink() {
       let min = Math.ceil(1);
       let max = Math.floor(9);
@@ -38,7 +37,6 @@ class HomePage {
     clickOnRandomProduct() {
       return this.getRandomProductLink().click();
     }
-    ////////////////////////////
 
    } 
 export default HomePage;

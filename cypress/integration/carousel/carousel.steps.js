@@ -3,7 +3,6 @@ import HomePage from "../../support/pages/HomePage";
 
 const home = new HomePage;
 
-//Aqui puedo hacer un get con un request 200
 
 Given('User is on the homepage', () => {
     cy.visit('/');

@@ -3,7 +3,6 @@ import Navbar from "../../support/components/Navbar";
 
 const navbar = new Navbar;
 
-//Aqui puedo hacer un get con un request 200
 
 Given('User is on the homepage', () => {
     cy.visit('/');
@@ -13,7 +12,7 @@ When('User clicks {string} link on the navbar', (linkName) => {
     navbar.clickOnNavbarLink(linkName);
 });
 
-/////////////refactorizar
+/////////////refactor
 Then('User should be able to see different products to select', () => {
     cy.request('https://api.demoblaze.com/entries').then((response)=>{
         cy.wrap(response.body.Items).as('responseBody').should('have.length', 9)
